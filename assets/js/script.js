@@ -1,8 +1,8 @@
+
 const intro = document.getElementById('intro')
 const startBtn = document.getElementById('start-btn')
 const submitBtn = document.getElementById('submit')
 const quiz = document.getElementById('quiz')
-
 const questionEl = document.getElementById('question')
 const answerEls = document.querySelectorAll('.answer')
 const a_text = document.getElementById('a_text')
@@ -13,13 +13,11 @@ startBtn.addEventListener("click", startQuiz);
 let currentQuiz = 0
 let score = 0
 // startQuiz()
-
 function startQuiz() {
   quiz.style.display = "block";
   intro.style.display= "none";
   deselectAnswers()
   const currentQuizData = quizData[currentQuiz]
-
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
@@ -38,17 +36,14 @@ function getSelected() {
     })
     return answer
 }
-
 submitBtn.addEventListener('click', () => {
   const answer = getSelected()
-
+  
   if(answer) {
       if(answer === quizData[currentQuiz].correct) {
           score++
       }
-
       currentQuiz++
-
       if(currentQuiz < quizData.length) {
           loadQuiz()
       } else {
@@ -59,7 +54,6 @@ submitBtn.addEventListener('click', () => {
       }
   }
 })
-
 const quizData = [
     {
         question: "Commonly used data type do NOT include:",

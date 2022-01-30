@@ -1,25 +1,69 @@
-h1 {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: rgb(224, 224, 255);
+    padding: 10px 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .intro-container, .high-score-container, .results-container {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  
+  .start-quiz {
+    padding-bottom: 10px;
+  }
+  
+  .quiz-container {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .quiz-questions {
+    padding: 15px;
+  }
+  
+  h1 {
     margin: 0;
     text-align: center;
     padding: 1rem;
   }
+  
   h2 {
     margin: 0;
     text-align: center;
     padding: 1rem;
   }
+  
   ul {
     list-style: none;
     padding: 0;
   }
+  
   ul li {
     font-size: 1.2rem;
     margin: 1rem auto;
   }
   
   button {
-    background-color: crimson;
-    color:bisque;
+    background-color:gray;
+    color:ghostwhite;
     font-size: 1.5rem;
     padding: 1rem;
     margin: 10px;
@@ -28,14 +72,13 @@ h1 {
     outline: none;
   }
   
-
   button:hover {
     outline: none;
-    background-color: rgb(65, 9, 41);
+    background-color: indianred;
   }
-
+  
   .answer {
-    background-color: darkgoldenrod;
+    background-color: rgb(9, 70, 160);
     font-size: 1.2rem;
     width: 85%;
     padding: 1rem;
@@ -44,11 +87,18 @@ h1 {
     border: none;
     outline: none;
   }
+  
   .answer:hover {
     outline: none;
-    background-color: rgb(24, 170, 73);
+    background-color: rgb(13, 155, 77);
   }
+  
   .answer:focus {
     outline: none;
-    background-color: rgb(23, 80, 42);
+    background-color: rgb(19, 61, 78);
+  }
+  
+  label.high-score {
+    font-size: 1.2rem;
+    font-weight: bold;
   }

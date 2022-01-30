@@ -14,7 +14,7 @@
   }
   
   header {
-    background-color: rgb(224, 224, 255);
+    background-color: rgb(222, 231, 167);
     padding: 10px 10px;
     border-radius: 25px;
     display: flex;
@@ -62,8 +62,8 @@
   }
   
   button {
-    background-color:gray;
-    color:ghostwhite;
+    background-color:rgb(159, 164, 165);
+    color:rgb(0, 0, 0);
     font-size: 1.5rem;
     padding: 1rem;
     margin: 10px;
@@ -78,7 +78,7 @@
   }
   
   .answer {
-    background-color: rgb(9, 70, 160);
+    background-color:rgb(66, 138, 138);
     font-size: 1.2rem;
     width: 85%;
     padding: 1rem;
